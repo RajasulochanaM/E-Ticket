@@ -1,0 +1,122 @@
+h1{
+    text-align: center;
+    color: rgb(12, 59, 30);
+}
+body{
+    background-color: rgb(232, 236, 240);
+}
+#t1{
+    margin-left: auto;
+    margin-right: auto;
+}
+#fname,#lname,#phone,#email,#Password,#confirm_password{
+    width: 10cm;
+    height: 0.9cm;
+    border-radius: 0.1cm;
+    padding-left: 10px;
+    border: 1px solid rgb(35, 144, 207);
+    padding-top: 5px;
+    background-color: rgb(206, 221, 208);
+}
+#fname:hover{
+    width: 10cm;
+    height: 1cm;
+    border-radius: 0.1cm;
+    padding-top: 5px;
+    border: 2px solid rgb(83, 101, 105);
+   
+    background-color: rgb(206, 221, 208);
+}
+#lname:hover{
+    width: 10cm;
+    height: 1cm;
+    border-radius: 0.1cm;
+    padding-top: 5px;
+    border: 2px solid rgb(83, 101, 105);
+   
+    background-color: rgb(206, 221, 208);
+}
+#phone:hover{
+    width: 10cm;
+    height: 1cm;
+    border-radius: 0.1cm;
+    padding-top: 5px;
+    border: 2px solid rgb(83, 101, 105);
+   
+    background-color: rgb(206, 221, 208);
+}
+#email:hover{
+    width: 10cm;
+    height: 1cm;
+    border-radius: 0.1cm;
+    padding-top: 5px;
+    border: 2px solid rgb(83, 101, 105);
+   
+    background-color: rgb(206, 221, 208);
+}
+#Password:hover{
+    width: 10cm;
+    height: 1cm;
+    border-radius: 0.1cm;
+    padding-top: 5px;
+    border: 2px solid rgb(83, 101, 105);
+   
+    background-color: rgb(206, 221, 208);
+}
+#confirm_password:hover{
+    width: 10cm;
+    height: 1cm;
+    border-radius: 0.1cm;
+    padding-top: 5px;
+    border: 2px solid rgb(83, 101, 105);
+    background-color: rgb(206, 221, 208);
+}
+legend{
+    text-align: center;
+    font-size: x-large;
+    font-weight: 600;
+    color: rgb(12, 59, 30);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 0px;
+}
+#field1{
+    padding: 20px 12px;
+    margin-left: 12cm;
+    padding-top: 0.90px;
+    padding-bottom: 30px ;
+    background-color: rgb(148, 171, 177);
+        border-radius: 0.2cm;
+        border: 0px;
+        box-shadow: 10px 10px 10px 1px rgb(104, 96, 96);
+    width: fit-content;
+}
+#sign_up,#cancel{
+    background-color: rgb(169, 202, 189);
+    border-radius: .2cm;
+    width: 150px;
+    height: 40px;
+    font-size: large;
+    font-weight: 600;
+    border: 1px solid green;
+}
+#cancel:hover{
+    background-color: rgb(169, 202, 189);
+    border-radius: .2cm;
+    width: 151px;
+    height: 41px;
+    font-size: large;
+    font-weight: 600;
+    border: 2px solid rgb(52, 81, 114);
+}
+#sign_up:hover{
+    background-color: rgb(169, 202, 189);
+    border-radius: .2cm;
+    width: 151px;
+    height: 41px;
+    font-size: large;
+    font-weight: 600;
+    border: 2px solid rgb(52, 81, 114);
+}
+#error{
+    font-size: medium;
+}

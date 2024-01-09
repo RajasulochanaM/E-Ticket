@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Train Booking</title>
+</head>
+<body>
+    
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(12, 59, 30);
+        }
+        body{
+            background-color: rgb(232, 236, 240);
+            background-image: url('./images/trainbg.jpg'),linear-gradient(rgba(0, 0, 0, 100),rgb(0, 0, 0,100));
+            background-size: cover;
+            background-blend-mode: overlay;
+        }
+        table{
+            
+            margin-left: auto;
+            margin-right: auto;
+        }
+        input{
+           
+           border-top-color: rgb(37, 78, 61);
+           border-bottom-color: rgb(37, 78, 61);
+           border-right-color: rgb(37, 68, 61);
+           font-size: medium;
+           background-color: rgb(230, 230, 203);
+           text-align: center;
+           border-radius: 0.2cm;
+        }
+        legend{
+            text-align: center;
+            font-size: x-large;
+            font-weight: 600;
+            color: rgb(12, 59, 30);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px 0px;
+        }
+        fieldset{
+            padding: 20px 12px;
+            margin-left: 11cm;
+            padding-top: 0.90px;
+            padding-bottom: 30px ;
+            background-color: rgb(148, 171, 177);
+        border-radius: 0.2cm;
+        border: 0px;
+        box-shadow: 10px 10px 10px 1px rgb(104, 96, 96);
+        }
+        #name,#phone_no,#age,#Passengers,#price{
+            width: 250px;
+            height: 30px;
+            border: 0px;
+           font-size: medium;
+           background-color: rgb(235, 235, 228);
+           text-align: center;
+           border-radius: 0.1cm;
+        }
+        #male,#female{
+           font-size: medium;
+           background-color: rgb(230, 230, 203);
+           text-align: center;
+           border-radius: 0.2cm;
+           border: 0px;
+           width: 30px;
+        }
+        #male:hover{
+           font-size: medium;
+           background-color: rgb(230, 230, 203);
+           text-align: center;
+           border-radius: 0.2cm;
+           border: 4px solid rgb(77, 77, 201);
+           width: 30px;
+        }
+        #female:hover{
+           font-size: medium;
+           background-color: rgb(230, 230, 203);
+           text-align: center;
+           border-radius: 0.2cm;
+           border: 4px solid rgb(77, 77, 201);
+           width: 30px;
+        }
+        #name:hover{
+            width: 250px;
+            height: 30px;
+            border: 2px solid rgb(144, 144, 185);
+           font-size: medium;
+           background-color: rgb(235, 235, 228);
+           text-align: center;
+           border-radius: 0.1cm;
+        }
+        #phone_no:hover{
+            width: 250px;
+            height: 30px;
+            border: 2px solid rgb(144, 144, 185);
+           font-size: medium;
+           background-color: rgb(235, 235, 228);
+           text-align: center;
+           border-radius: 0.1cm;
+        }
+        #age:hover{
+            width: 250px;
+            height: 30px;
+            border: 2px solid rgb(144, 144, 185);
+           font-size: medium;
+           background-color: rgb(235, 235, 228);
+           text-align: center;
+           border-radius: 0.1cm;
+        }
+        #Passengers:hover{
+            width: 250px;
+            height: 30px;
+            border: 2px solid rgb(144, 144, 185);
+           font-size: medium;
+           background-color: rgb(235, 235, 228);
+           text-align: center;
+           border-radius: 0.1cm;
+        }
+        #price:hover{
+            width: 250px;
+            height: 30px;
+            border: 2px solid rgb(144, 144, 185);
+           font-size: medium;
+           background-color: rgb(235, 235, 228);
+           text-align: center;
+           border-radius: 0.1cm;
+        }
+        legend{
+            text-align: center;
+            font-size: x-large;
+            font-weight: 600;
+            color: rgb(12, 59, 30);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px 0px;
+        }
+        fieldset{
+            padding: 20px 12px;
+            margin-left: 11cm;
+            padding-top: 0.90px;
+            padding-bottom: 30px ;
+            background-color: rgb(148, 171, 177);
+        border-radius: 0.2cm;
+        border: 0px;
+        box-shadow: 10px 10px 10px 1px rgb(104, 96, 96);
+        }
+        button{
+            background-color: rgb(109, 172, 148);
+            border-radius: .2cm;
+            width: 150px;
+            height: 40px;
+            font-size: large;
+            font-weight: 600;
+            border: 0px;
+        }
+        button:hover{
+            background-color: rgb(109, 172, 148);
+            border-radius: .2cm;
+            width: 150px;
+            height: 40px;
+            font-size: large;
+            font-weight: 600;
+            border: 2px solid green;
+        }
+        a{
+            color: rgb(24, 73, 57);
+            font-size: large;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
+    </head>
+    <body>
+    <h1>E -TICKET</h1>
+    <fieldset style="width: 500px;">
+        <legend></legend>
+    
+    <table>
+        <caption>TRAIN TICKET BOOKING</caption>
+        <tr>
+            <th><label>NAME :</label></th>
+            <td><input type="text" placeholder="Enter Name" id="name"></td>
+        </tr>
+        <tr>
+            <th><label>AGE :</label></th>
+            <td><input type="number" placeholder="Enter Age" id="age"></td>
+        </tr>
+        <tr>
+            <th><label>MOBILE NUMBER :</label></th>
+            <td><input type="number" placeholder="Enter Mobile Number" id="phone_no"></td>
+        </tr>
+        <tr>
+            <th><label>GENDER:</label></th>
+            <td>
+                <input type="radio" name="gender" id="male"><label>Male</label>
+                <input type="radio" name="gender" id="female"><label>Female</label> 
+            </td>
+        </tr>
+        <tr>
+            <th><label>NO.OF.PASSENGERS:</label></th>
+            <td><input type="number" placeholder="Enter No.of.Passengers" id="Passengers"></td>
+        </tr>
+        <tr>
+            <th><label>TOTAL PRICE</label></th>
+            <td><input type="number" placeholder="" id="price"></td>
+        </tr>
+        <tr>
+            <td><a href="trainbook.html"><button type="button">Cancel</a></button></td>
+            <td><a href="trainfinal.html"><button type="button">Book Now</a></button></td>
+        </tr>
+    </table>
+    </fieldset>
+    </body>
+    </html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-ticket</title>
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(12, 59, 30);
+        }
+        body{
+            background-color: rgb(232, 236, 240);
+            background-image: url('./images/bg.jpg');
+            background-size: cover;
+            
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        input{
+           border-radius: 0.5cm;
+           border-top-color: rgb(37, 78, 61);
+           border-bottom-color: rgb(37, 78, 61);
+           border-right-color: rgb(37, 68, 61);
+           width: 250px;
+           height: 40px;
+           background-color: rgb(230, 230, 203);
+           text-align: center;
+           font-size: large;
+        }
+        legend{
+            text-align: center;
+            font-size: x-large;
+            font-weight: 600;
+            color: rgb(12, 59, 30);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 20px 0px;
+        }
+        fieldset{
+            padding: 40px 10px;
+            margin-left: 11cm;
+            background-color: rgb(148, 171, 177);
+        border-radius: 0.2cm;
+        border: 0px;
+        box-shadow: 10px 10px 10px 1px rgb(104, 96, 96);
+        }
+        button{
+            background-color: rgb(109, 172, 148);
+            border-radius: 2cm;
+            width: 255px;
+            height: 40px;
+            font-size: large;
+            font-weight: 600;
+            border-style: double;
+        }
+        a{
+            color: rgb(24, 73, 57);
+            font-size: large;
+            text-align: center;
+            text-decoration: none;
+        }
+        #signin_error{
+            margin-left: 110px;
+        }
+    </style>
+    <script src="..\javascript\login_valid.js"></script>
+</head>
+<body>
+    <h1>E -TICKET</h1>
+    <fieldset style="width: 500px;">
+        <legend>LOGIN</legend>
+    <table>
+        <tr>
+            <td><input type="text" placeholder="Username" id="user"></td>
+        </tr>
+        <tr>
+            <td><input type="password" placeholder="Password" id="passwd"></td>
+        </tr>
+        <tr>
+            <td><button type="button" id="loginbutton" onclick="login_validation()">Login</button></td>
+        </tr>
+        <tr>
+            <td><a href="forgotpswd.html">Forgot Password?</a></td>
+        </tr>
+        <tr>
+            <td><h4><strong>ARE YOU NEW USER?</strong></h4></td>
+        </tr>
+        <tr>
+            <td><a href="signup.html"><button type="button" id="signupbutton">Sign Up</a></button></td>
+        </tr>
+    </table>
+    <p id="signin_error"></p>
+    </fieldset>
+</body>
+</html>

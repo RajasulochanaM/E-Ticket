@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trian Booking</title>
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(12, 59, 30);
+        }
+        body{
+            background-color: rgb(232, 236, 240);
+            background-image: url('./images/trainbg.jpg'),linear-gradient(rgba(0, 0, 0, 100),rgb(0, 0, 0,100));
+            background-size: cover;
+            background-blend-mode: overlay;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        input{
+           font-size: medium;
+           border: 0px;
+           background-color: rgb(143, 204, 179);
+           text-align: center;
+           border-radius: 0.2cm;
+           width: 250px;
+           height: 40px;
+        }
+        input:hover{
+           font-size: medium;
+           border: 2px solid rgb(12, 12, 12);
+           background-color: rgb(143, 204, 179);
+           text-align: center;
+           border-radius: 0.2cm;
+           width: 255px;
+           height: 44px;
+        }
+        legend{
+            text-align: center;
+            font-size: x-large;
+            font-weight: 600;
+            color: rgb(12, 59, 30);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px 0px;
+        }
+        fieldset{
+            padding: 20px 12px;
+            margin-left: 11cm;
+            padding-top: 0.90px;
+            padding-bottom: 30px ;
+            background-color: rgb(148, 171, 177);
+        border-radius: 0.2cm;
+        border: 0px;
+        box-shadow: 10px 10px 10px 1px rgb(104, 96, 96);
+        }
+        button{
+            background-color: rgb(109, 172, 148);
+            border-radius: .2cm;
+            width: 150px;
+            height: 40px;
+            font-size: large;
+            font-weight: 600;
+            border: 0px;
+        }
+        button:hover{
+            background-color: rgb(49, 233, 24);
+            border-radius: .2cm;
+            width: 155px;
+            height: 45px;
+            font-size: large;
+            font-weight: 600;
+            
+        }
+        a{
+            color: rgb(24, 73, 57);
+            font-size: large;
+            text-align: center;
+            text-decoration: none;
+        }
+        td{
+            text-align: center;
+            font-size: large;
+            font-weight: 600;
+            color: rgb(12, 59, 30);
+            background-color: beige;
+        }
+        th{
+            text-align: center;
+            font-size: large;
+            font-weight: 600;
+            color: rgb(26, 167, 80);
+            background-color: black;
+        }
+        #table1{
+            border-radius: 1cm;
+            height: 400px;
+        }
+        #findbutton{
+            text-align: center;
+            font-size: large;
+            font-weight: 600;
+            color: rgb(26, 167, 80);
+        }
+    </style>
+</head>
+<body background-image ="busbg.jpg">
+    <h1>E -TICKET</h1>
+    <table style="width:40%" id="table1">
+        <thead>
+            <tr>
+                <td colspan="2"><strong>BOOK TRAIN NOW 
+                   <br> WHICH PLACE YOU WANT TO TRAVEL</strong></td>
+            </tr>
+        </thead>
+        <thead>
+        <tr>
+            <th><label>FROM : </label></th><br>
+            <td><input type="text" placeholder="Enter Start Location"></td>
+        </tr>
+        <tr>
+            <th><label>TO : </label></th><br>
+            <td><input type="text" placeholder="Enter Stop Location"></td>
+        </tr>
+        <tr>
+            <th><label>DATE : </label></th><br>
+            <td><input type="date" placeholder="Select Date"></td>
+        </tr>
+        <tr>
+            <th><label>TIME :</label></th><br>
+            <td><input type="time" placeholder="Select Time"></td>
+        </tr>
+        </table> 
+        <table>
+        <tr>
+            <th>
+                <a href="trainlist.html"><button type="button">Find Train</a></button>
+            </th>
+        </tr>
+    </thead>
+    </table>
+</body>
+</html>
