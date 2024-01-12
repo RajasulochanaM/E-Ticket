@@ -17,18 +17,21 @@
             background-blend-mode: overlay;
         }
         table{
-            
+            padding: 10px;
             margin-left: auto;
             margin-right: auto;
         }
         input{
-           
+           padding: 7px;
            border-top-color: rgb(37, 78, 61);
            border-bottom-color: rgb(37, 78, 61);
            border-right-color: rgb(37, 68, 61);
            font-size: medium;
            background-color: rgb(230, 230, 203);
            text-align: center;
+           width: 200px;
+           height: 30px; 
+           border: 0px;
            border-radius: 0.2cm;
         }
         legend{
@@ -44,10 +47,10 @@
             margin-left: 11cm;
             padding-top: 0.90px;
             padding-bottom: 30px ;
-            background-color: rgb(148, 171, 177);
-        border-radius: 0.2cm;
-        border: 0px;
-        box-shadow: 10px 10px 10px 1px rgb(104, 96, 96);
+            background-color: rgb(149, 135, 165);
+            border-radius: 0.2cm;
+            border: 0px;
+            box-shadow: 10px 10px 10px 1px rgb(104, 96, 96);
         }
         button{
             background-color: rgb(109, 172, 148);
@@ -69,11 +72,15 @@
             color: rgb(24, 73, 57);
             font-size: large;
         }
+        #radio{
+            width: 20px;
+            
+        }
     </style>
 </head>
 <body>
     <h1>E -TICKET</h1>
-    <fieldset style="width: 500px;">
+    <fieldset style="width: 500px; height: 500px;">
         <legend></legend>
     
     <table>
@@ -91,10 +98,10 @@
             <td><input type="number" placeholder="Enter Mobile Number"></td>
         </tr>
         <tr>
-            <th><label>GENDER:</label></th>
-            <td>
-                <input type="radio" name="gender"><label>Male</label>
-                <input type="radio" name="gender"><label>Female</label> 
+            <th id="radio"><label id="radio">GENDER:</label></th>
+            <td id="radio">
+                <input type="radio" name="gender" id="radio"><label id="radio">Male</label>
+                <input type="radio" name="gender" id="radio"><label id="radio">Female</label> 
             </td>
         </tr>
         <tr>
